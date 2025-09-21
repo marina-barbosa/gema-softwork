@@ -22,7 +22,7 @@ export function ButtonGema({
 
   return (
     <button {...props} className={`${base} ${variantClasses}`}>
-      <span className="text-sm md:text-base font-medium uppercase text-black">
+      <span className="text-sm md:text-base font-medium uppercase text-black flex items-center gap-4">
         {children}
       </span>
 
