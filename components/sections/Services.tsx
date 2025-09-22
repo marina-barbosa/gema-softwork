@@ -1,4 +1,3 @@
-// import { Badge } from "@/components/ui/badge";
 import { LuArrowUpRight } from "react-icons/lu";
 
 const services = [
@@ -6,8 +5,9 @@ const services = [
     number: "01",
     category: "WEB",
     title: "Landing Pages",
-    description: "Páginas brutais que convertem",
-    price: "A partir de R$ 2.500",
+    description: "Páginas que convertem",
+    // price: "A partir de R$ 2.500",
+    price: "A partir de R$ 500",
     tags: ["High-Convert", "Mobile-First", "Speed"]
   },
   {
@@ -15,7 +15,8 @@ const services = [
     category: "WEB",
     title: "E-commerce",
     description: "Lojas que vendem sozinhas",
-    price: "A partir de R$ 8.000",
+    // price: "A partir de R$ 8.000",
+    price: "A partir de R$ 3.000",
     tags: ["Checkout", "Analytics", "Growth"]
   },
   {
@@ -24,6 +25,7 @@ const services = [
     title: "Roblox Games",
     description: "Experiências que viciam",
     price: "A partir de R$ 5.000", 
+    // price: "A partir de R$ 5.000", 
     tags: ["Lua Script", "Monetization", "UGC"]
   },
   {
@@ -31,7 +33,8 @@ const services = [
     category: "APP",
     title: "Mobile Apps",
     description: "Apps nativos de alto impacto",
-    price: "A partir de R$ 15.000",
+    price: "A partir de R$ 3.000",
+    // price: "A partir de R$ 15.000",
     tags: ["React Native", "Push", "Offline"]
   },
   {
@@ -39,7 +42,8 @@ const services = [
     category: "APP", 
     title: "Desktop Apps",
     description: "Software desktop poderoso",
-    price: "A partir de R$ 12.000",
+    price: "A partir de R$ 3.000",
+    // price: "A partir de R$ 12.000",
     tags: ["Electron", "Cross-Platform", "Auto-Update"]
   }
 ];
@@ -120,7 +124,7 @@ const Services = () => {
 
         {/* Bottom CTA */}
         <div className="mt-20 text-center">
-          <p className="text-muted-foreground mb-4">
+          <p className="text-foreground mb-4">
             Projeto único? Vamos conversar sobre seu orçamento personalizado.
           </p>
           <div className="text-sm uppercase tracking-wider text-brand font-bold">

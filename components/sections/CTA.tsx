@@ -1,6 +1,4 @@
-// import { Button } from "@/components/ui/button";
-// import { ArrowRight, MessageCircle } from "lucide-react";
-import { LuMessageCircle , LuArrowRight } from "react-icons/lu";
+import { LuMessageCircle, LuArrowRight } from "react-icons/lu";
 
 import { ButtonGema } from "../ui/ButtonGema";
 
@@ -30,13 +28,13 @@ export default function CTA() {
                 <span className="text-brand">ACONTECER</span>
               </h2>
               <p className="text-xl text-surface-soft leading-relaxed">
-                Não perca tempo com amadores. Trabalhe com quem entrega
-                resultados brutais.
+                Transforme suas ideias em soluções digitais de qualidade.
+                Resultados garantidos.
               </p>
             </div>
 
             <div className="space-y-4">
-              <ButtonGema>
+              <ButtonGema variant="dark">
                 <LuMessageCircle /> QUERO MEU PROJETO <LuArrowRight />
               </ButtonGema>
             </div>

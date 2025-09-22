@@ -99,11 +99,6 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="hover:text-black transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-black transition-colors">
                   Contato
                 </a>
               </li>
@@ -119,7 +114,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-foreground-body flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground-body text-sm">
-            © 2024 Gema Softwork. Todos os direitos reservados.
+            © 2025 Gema Softwork. Todos os direitos reservados.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
