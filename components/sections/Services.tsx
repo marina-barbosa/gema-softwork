@@ -52,10 +52,7 @@ const Services = () => {
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-8">
             <div className="h-px bg-brand flex-1" />
-            {/* <Badge variant="outline" className="border-brand text-brand font-bold">
-              SERVIÇOS
-            </Badge> */}
-            <span className="border-brand text-brand font-bold">
+            <span className="border border-brand rounded-full px-4 py-1 text-brand font-bold">
               SERVIÇOS
             </span>
             <div className="h-px bg-brand flex-1" />
@@ -73,7 +70,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={service.number}
-              className="group border-b border-border hover:border-brand transition-colors duration-300 pb-8"
+              className="group border-b border-foreground hover:border-brand transition-colors duration-300 pb-8"
             >
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 {/* Number & Category */}
@@ -81,10 +78,9 @@ const Services = () => {
                   <span className="text-6xl font-black text-brand/20 group-hover:text-brand transition-colors">
                     {service.number}
                   </span>
-                  {/* <Badge variant="secondary" className="text-xs font-bold">
+                  <span className="bg-black text-brand px-2 py-1 rounded-full text-xs font-bold">
                     {service.category}
-                  </Badge> */}
-                  <span className="text-xs font-bold">{service.category}</span>
+                  </span>
                 </div>
 
                 {/* Service Info */}
@@ -92,14 +88,14 @@ const Services = () => {
                   <h3 className="text-2xl font-bold group-hover:text-brand transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground text-lg">
+                  <p className="text-foreground text-lg">
                     {service.description}
                   </p>
                   <div className="flex flex-wrap gap-2 pt-2">
                     {service.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs bg-muted px-2 py-1 rounded font-medium"
+                        className="text-xs bg-surface px-2 py-1 rounded font-medium"
                       >
                         {tag}
                       </span>
@@ -110,12 +106,12 @@ const Services = () => {
                 {/* Price & Action */}
                 <div className="lg:col-span-4 flex items-center justify-between lg:justify-end gap-6">
                   <div className="text-right">
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-sm text-foreground">
                       Investimento
                     </div>
                     <div className="text-xl font-bold">{service.price}</div>
                   </div>
-                  <LuArrowUpRight className="w-6 h-6 text-muted-foreground group-hover:text-brand group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
+                  <LuArrowUpRight className="w-6 h-6 text-foreground group-hover:text-brand group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
                 </div>
               </div>
             </div>
