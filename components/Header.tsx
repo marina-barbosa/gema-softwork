@@ -14,8 +14,9 @@ export default function Header() {
   }, []);
 
   return (
+    // fixed
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg transition-transform duration-300 ${
+      className={`hidden top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg transition-transform duration-300 ${
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
